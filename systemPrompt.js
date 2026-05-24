@@ -60,7 +60,7 @@ eBooks individuais (todos com garantia de 7 dias pela Kiwify):
    Para quem: quer um guia completo de como ganhar dinheiro extra
 
 Kits (melhor custo-benefício):
-- Kit Starter (3 eBooks) — R$67 → https://pay.kiwify.com.br/6lm6lih
+- Kit Starter (3 eBooks) — R$67 → https://pay.kiwify.com.br/6lm6Iih
 - Kit Acelerador (9 eBooks) — R$147 → https://pay.kiwify.com.br/6rVEIGm
 - Kit Jornada Completa (12 eBooks) — R$197 → https://pay.kiwify.com.br/vsIk65Y
 
