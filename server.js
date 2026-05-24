@@ -1,13 +1,13 @@
 require("dotenv").config();
 const express = require("express");
-const Anthropic = require("@anthropic-ai/sdk");
+const Groq = require("groq-sdk");
 const axios = require("axios");
 const { gerarSystemPrompt, getNomeAleatorio } = require("./systemPrompt");
 
 const app = express();
 app.use(express.json());
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 // Mapa: numero -> { historico, nomeAtendente }
 const conversas = new Map();
@@ -34,14 +34,17 @@ async function chamarIA(numero, mensagemUsuario) {
 
   const historicoRecente = historico.slice(-MAX_HISTORICO);
 
-  const resposta = await client.messages.create({
-    model: "claude-haiku-4-5-20251001",
+  const resposta = await groq.chat.completions.create({
+    model: "llama-3.3-70b-versatile",
     max_tokens: 600,
-    system: gerarSystemPrompt(nome),
-    messages: historicoRecente,
+    temperature: 0.8,
+    messages: [
+      { role: "system", content: gerarSystemPrompt(nome) },
+      ...historicoRecente
+    ],
   });
 
-  const textoResposta = resposta.content[0].text;
+  const textoResposta = resposta.choices[0].message.content;
   historico.push({ role: "assistant", content: textoResposta });
 
   if (historico.length > MAX_HISTORICO * 2)
@@ -79,7 +82,6 @@ app.get("/", (req, res) =>
   res.json({ status: "online", bot: "IA Financeiro — Equipe de Atendimento" })
 );
 
-// Ver qual atendente está em qual contato
 app.get("/atendentes", (req, res) => {
   const lista = {};
   conversas.forEach((v, k) => { lista[k] = v.nome; });
