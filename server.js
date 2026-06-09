@@ -9,6 +9,25 @@ app.use(express.json());
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
+// Toggle on/off — padrão vem de BOT_ENABLED no Render (true se não definido)
+let botAtivo = process.env.BOT_ENABLED !== "false";
+
+app.get("/bot/status", (req, res) => {
+  res.json({ ativo: botAtivo, mensagem: botAtivo ? "Bot LIGADO — respondendo automaticamente" : "Bot DESLIGADO — atendimento manual" });
+});
+
+app.post("/bot/on", (req, res) => {
+  botAtivo = true;
+  console.log("[BOT] Ativado manualmente");
+  res.json({ ativo: true, mensagem: "Bot LIGADO ✅" });
+});
+
+app.post("/bot/off", (req, res) => {
+  botAtivo = false;
+  console.log("[BOT] Desativado manualmente");
+  res.json({ ativo: false, mensagem: "Bot DESLIGADO ⏸️ — você assumiu o atendimento" });
+});
+
 // Mapa: numero -> { historico, nome }
 const conversas = new Map();
 const MAX_HISTORICO = 20;
@@ -107,6 +126,7 @@ Gere UMA mensagem diferente e natural. Responda APENAS com o texto da mensagem, 
 
 app.post("/webhook", async (req, res) => {
   res.sendStatus(200);
+  if (!botAtivo) return;
   try {
     const body = req.body;
     if (
