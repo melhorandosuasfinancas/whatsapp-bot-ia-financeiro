@@ -57,7 +57,7 @@ Se o cliente falar sobre investimentos / poupança / patrimônio / aposentadoria
 Se o cliente falar sobre emagrecer / perder barriga / perder peso / dieta / disposição / autoestima física:
 → Apresente EMAGREÇA EM 21 DIAS
   Benefícios: hábitos mais saudáveis, melhor autoestima, mais disposição, plano simples para aplicar
-  Preço: R$29,90 | Garantia: 7 dias
+  Preço: R$59,90 | Garantia: 7 dias
   Link: https://pay.kiwify.com.br/lK6yBk6
 
 Se o cliente falar sobre ex / relacionamento / casamento / reconquista / separação / autoestima emocional:
