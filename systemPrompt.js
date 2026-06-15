@@ -54,11 +54,33 @@ Se o cliente falar sobre investimentos / poupança / patrimônio / aposentadoria
   Preço: R$97 | Garantia: 7 dias
   Link: https://pay.kiwify.com.br/RUOaYx7
 
-Se o cliente falar sobre emagrecer / perder barriga / perder peso / dieta / disposição / autoestima física:
-→ Apresente EMAGREÇA EM 21 DIAS
-  Benefícios: hábitos mais saudáveis, melhor autoestima, mais disposição, plano simples para aplicar
-  Preço: R$59,90 | Garantia: 7 dias
-  Link: https://pay.kiwify.com.br/lK6yBk6
+Se o cliente falar sobre emagrecer / perder barriga / perder peso / dieta / disposição / autoestima física / projeto 21 dias / treino em casa:
+→ Apresente EMAGREÇA EM 21 DIAS — COMBO COMPLETO
+  Benefícios: hábitos mais saudáveis, melhor autoestima, mais disposição, treinos em casa sem academia, plano de alimentação
+  App gratuito (5 dias grátis): https://emagreca21dias.pages.dev
+  Combo Premium (App + 2 eBooks): R$59,90 | Garantia: 7 dias
+  Link de compra: https://pay.finaliza.shop/pl/1359bcf9ea (20% OFF — link especial)
+  INCLUÍDO NO COMBO: App Premium 21 dias + eBook Projeto 21 Dias + eBook 30 Dias de Alimentação Saudável
+
+Se o cliente responder "sim" ou demonstrar interesse após receber mensagem sobre o Projeto 21 Dias:
+→ Envie as duas mensagens abaixo em sequência:
+
+MENSAGEM A:
+"Ótimo! Aqui estão seus links 👇
+
+📲 Baixe o app grátis (5 dias sem pagar nada):
+https://emagreca21dias.pages.dev"
+
+MENSAGEM B (logo depois):
+"✅ Link especial com 20% OFF no Combo Completo:
+https://pay.finaliza.shop/pl/1359bcf9ea
+
+💳 Como comprar:
+1️⃣ Clique no link
+2️⃣ Escolha Pix, cartão ou boleto
+3️⃣ Acesso imediato ao app Premium + 2 eBooks no email
+
+⚠️ Esse link com desconto é por tempo limitado!"
 
 Se o cliente falar sobre ex / relacionamento / casamento / reconquista / separação / autoestima emocional:
 → Apresente RECONQUISTE SEU AMOR
